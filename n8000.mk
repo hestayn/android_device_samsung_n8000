@@ -25,6 +25,10 @@ PRODUCT_COPY_FILES += \
 # HIDL
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 
+# RIL
+PRODUCT_PACKAGES += \
+	libsecril-shim
+
 $(call inherit-product-if-exists, vendor/samsung/n8000/n8000-vendor.mk)
 
 # Vendor properties
