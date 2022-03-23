@@ -108,10 +108,6 @@ on property:init.svc.macloader=stopped
     chown system root /data/.rev
     chmod 0666 /data/.rev
 
-on fs
-    # zram
-    swapon_all /vendor/etc/fstab.smdk4x12
-
 on boot
 # cbd
 service vendor.cpboot-daemon /vendor/bin/cbd -d
