@@ -27,6 +27,8 @@ DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 
 # RIL
 PRODUCT_PACKAGES += \
+    libsecril-client \
+    libsecril-client-sap \
 	libsecril-shim
 
 $(call inherit-product-if-exists, vendor/samsung/n8000/n8000-vendor.mk)
