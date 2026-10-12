@@ -69,4 +69,7 @@
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
     <bool name="config_samsung_stk">true</bool>
+
+    <!-- Doze dreams are not subject to the same start conditions as ordinary dreams -->
+    <string name="config_dozeComponent"></string>
 </resources>

@@ -31,3 +31,12 @@ $(call inherit-product-if-exists, vendor/samsung/n8000/n8000-vendor.mk)
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 PRODUCT_PACKAGES += SensorStream ErmetalLauncher
+
+# Ermetal Kiosk UI & System configs
+PRODUCT_COPY_FILES += \
+    device/samsung/n8000/default-permissions-ermetal.xml:system/etc/default-permissions/default-permissions-ermetal.xml \
+    device/samsung/n8000/ermetal-sysconfig.xml:system/etc/sysconfig/ermetal-sysconfig.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lockscreen.disable.default=true \
+    qemu.hw.mainkeys=1

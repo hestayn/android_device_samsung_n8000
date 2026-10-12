@@ -28,3 +28,4 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/samsung/n80xx-common/selinux/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/samsung/n80xx-common/selinux/private
 
 ALLOW_MISSING_DEPENDENCIES := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive

@@ -68,3 +68,24 @@ ro.control_privapp_permissions=log
 # Disable Setup Wizard
 ro.setupwizard.mode=DISABLED
 ro.setupwizard.enterprise_mode=1
+
+# ADB, Root & USB Configuration
+ro.secure=0
+ro.debuggable=1
+persist.sys.root_access=3
+ro.adb.secure=0
+persist.sys.usb.config.extra=none
+ro.sys.usb.default.config=mtp,adb
+sys.usb.config=mtp,adb
+ro.sys.usb.storage.type=mtp
+
+# Lockscreen and Kiosk UI
+ro.lockscreen.disable.default=true
+qemu.hw.mainkeys=1
+
+# Battery & IoT Kiosk Optimizations
+hw.nfc.supported=0
+ro.bluetooth.alwaysbleon=0
+ro.com.google.locationfeatures=0
+ro.com.google.networklocation=0
+wifi.supplicant_scan_interval=300
