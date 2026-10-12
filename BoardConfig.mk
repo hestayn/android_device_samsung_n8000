@@ -18,7 +18,7 @@
 -include device/samsung/n80xx-common/BoardConfigCommon.mk
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := c0,p4noterf,p4noterfxx,n8000,GT-N8000
+TARGET_OTA_ASSERT_DEVICE := c0,p4noterf,p4noterfxx,n8000,GT-N8000,n8005,GT-N8005
 N8000 := true
 TARGET_KERNEL_CONFIG := lineageos_n8000_defconfig
 
@@ -26,3 +26,5 @@ TARGET_KERNEL_CONFIG := lineageos_n8000_defconfig
 BOARD_SEPOLICY_DIRS += device/samsung/n80xx-common/selinux/vendor
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/samsung/n80xx-common/selinux/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/samsung/n80xx-common/selinux/private
+
+ALLOW_MISSING_DEPENDENCIES := true

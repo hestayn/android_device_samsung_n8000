@@ -61,3 +61,10 @@ wifi.supplicant_scan_interval=240
 # Multiuser
 fw.max_users=4
 fw.show_multiuserui=1
+
+# Privapp permissions - log only to prevent SystemServer crash loops
+ro.control_privapp_permissions=log
+
+# Disable Setup Wizard
+ro.setupwizard.mode=DISABLED
+ro.setupwizard.enterprise_mode=1
