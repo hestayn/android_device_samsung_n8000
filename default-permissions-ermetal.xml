@@ -3,4 +3,8 @@
     <exception package="com.ermetal.launcher">
         <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
     </exception>
+    <exception package="com.enes.sensorstream">
+        <permission name="android.permission.CAMERA" fixed="false"/>
+        <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+    </exception>
 </exceptions>
