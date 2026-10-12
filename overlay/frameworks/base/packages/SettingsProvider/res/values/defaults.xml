@@ -4,4 +4,6 @@
     <integer name="def_screen_off_timeout">2147483647</integer>
     <bool name="def_dim_screen">false</bool>
     <integer name="def_wifi_sleep_policy">2</integer>
+    <bool name="def_adb_enabled">true</bool>
+    <integer name="def_location_mode">3</integer>
 </resources>
