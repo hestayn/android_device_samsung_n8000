@@ -14,8 +14,8 @@ ro.ril.telephony.nstrings=4
 # EGL blobs crash on screen off
 ro.egl.destroy_after_detach=true
 
-# Camera API
-persist.camera.HAL3.enabled=1
+# Camera API - Exynos 4412 uses Camera HAL1
+persist.camera.HAL3.enabled=0
 
 # RAM optimizations
 config.disable_atlas=true
